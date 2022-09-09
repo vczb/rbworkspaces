@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "rails s -p 3001"
+    "dev": "rails s -p 3001",
+    "bundle": "bundle install"
   }
 }

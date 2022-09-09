@@ -5,7 +5,10 @@
   "scripts": {
     "dev:api": "yarn workspace @rbworkspaces/api dev",
     "dev:web": "yarn workspace @rbworkspaces/web dev",
-    "dev": "concurrently \"yarn dev:api\" \"yarn dev:web\""
+    "bundle:api": "yarn workspace @rbworkspaces/api bundle",
+    "bundle:web": "yarn workspace @rbworkspaces/web bundle",
+    "dev": "concurrently \"yarn dev:api\" \"yarn dev:web\"",
+    "bundle": "concurrently \"yarn bundle:api\" \"yarn bundle:web\""
   },
   "workspaces": [
     "apps/*",
