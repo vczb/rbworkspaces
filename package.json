@@ -1,0 +1,12 @@
+{
+  "name": "rbworkspaces",
+  "packageManager": "yarn@3.2.3",
+  "private": true,
+  "scripts": {
+    "dev": "yarn workspace @rbworkspaces/api dev"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
