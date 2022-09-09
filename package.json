@@ -3,10 +3,15 @@
   "packageManager": "yarn@3.2.3",
   "private": true,
   "scripts": {
-    "dev": "yarn workspace @rbworkspaces/api dev"
+    "dev:api": "yarn workspace @rbworkspaces/api dev",
+    "dev:web": "yarn workspace @rbworkspaces/web dev",
+    "dev": "concurrently \"yarn dev:api\" \"yarn dev:web\""
   },
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
 }
