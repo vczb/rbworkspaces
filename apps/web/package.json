@@ -2,6 +2,9 @@
   "name": "@rbworkspaces/web",
   "version": "0.0.0",
   "private": true,
+  "dependencies": {
+    "methods": "*"
+  },
   "scripts": {
     "dev": "rails s -p 3000",
     "bundle": "bundle install"
